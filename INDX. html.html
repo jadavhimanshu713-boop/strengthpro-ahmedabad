@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StrengthPro Ahmedabad - Gym equipment sales, installation & service. Bull Strength machines, Lat Pull Down, Leg Press, Chest Press. Call 6355175955">
+    <meta name="keywords" content="gym equipment Ahmedabad, Bull Strength Ahmedabad, gym service Ahmedabad, leg press Ahmedabad, Rohan Dohare">
+    <meta name="author" content="Rohan Dohare">
+    <meta name="robots" content="index, follow">
+    <title>StrengthPro Ahmedabad | Gym Equipment Sales & Service | 6355175955</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 1.5rem; text-align: center; }
+        .header-content h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .header-content p { font-size: 1.2rem; opacity: 0.9; }
+        nav { background: #0f3460; padding: 1rem; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+        nav a { color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 5px; transition: background 0.3s; }
+        nav a:hover { background: #ff6b35; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNjAwIiBjeT0iMzAwIiByPSIyMDAiIGZpbGw9IiM0Q0FGNTAiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iNDAwIiByPSIxNTAiIGZpbGw9IiNGRjZCMzUiLz4KPGNpcmNsZSBjeD0iNDAwIiBjeT0iNDAwIiByPSIxMjAiIGZpbGw9IiMxRTNDNzIiLz4KPC9zdmc+') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero-content h2 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero-content p { font-size: 1.3rem; max-width: 600px; margin: 0 auto; }
+        .cta-button { display: inline-block; background: #ff6b35; color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 1rem; transition: transform 0.3s; }
+        .cta-button:hover { transform: scale(1.05); }
+        section { padding: 4rem 1rem; max-width: 1200px; margin: auto; }
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; color: #1e3c72; }
+        .services-grid, .equipments { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .service, .equip { background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .service:hover, .equip:hover { transform: translateY(-10px); }
+        .equip img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; background: #f0f0f0; }
+        #admin-panel { display: none; background: #e8f5e8; padding: 2rem; border-radius: 15px; margin: 2rem 0; }
+        .login-form, #admin-form { max-width: 400px; margin: 1rem auto; }
+        input, button, textarea, select { width: 100%; padding: 0.8rem; margin: 0.5rem 0; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+        button { background: #ff6b35; color: white; border: none; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        button:hover { background: #e55a2b; }
+        .contact-info { background: #f8f9fa; padding: 2rem; border-radius: 15px; text-align: center; }
+        .phone-number { font-size: 2rem; font-weight: bold; color: #ff6b35; display: block; margin: 1rem 0; }
+        footer { background: #1e3c72; color: white; text-align: center; padding: 2rem; }
+        @media (max-width: 768px) { .hero-content h2 { font-size: 2rem; } nav ul { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>StrengthPro Ahmedabad</h1>
+            <p>✅ Bull Strength Gym Equipments | Installation | Service | AMC</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#services">🔧 Services</a></li>
+            <li><a href="#equipments">⚙️ Equipments</a></li>
+            <li><a href="#contact">📞 Contact</a></li>
+            <li><a href="#" onclick="toggleAdmin()">🔐 Admin</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Ahmedabad's #1 Gym Equipment Partner</h2>
+            <p>Premium Bull Strength machines with expert installation & lifetime service support. 100+ gyms trust us!</p>
+            <a href="#contact" class="cta-button">📲 Call Now: 6355175955</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>🏋️ Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>🚚 Equipment Supply</h3>
+                <p>Complete Bull Strength range - Lat Pull Down, Leg Press, Chest Press, Shoulder Press</p>
+            </div>
+            <div class="service">
+                <h3>🔧 Installation</h3>
+                <p>Professional gym setup anywhere in Ahmedabad. 24hrs service!</p>
+            </div>
+            <div class="service">
+                <h3>🛠️ AMC & Repair</h3>
+                <p>Annual maintenance contract. All Bull Strength machines covered.</p>
+            </div>
+            <div class="service">
+                <h3>⚙️ Customization</h3>
+                <p>Custom gym layouts for your space. Plate loaded & pin loaded options.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipments">
+        <h2>⚙️ Bull Strength Equipments</h2>
+        <div id="equip-list" class="equipments">
+            <!-- Dynamic content -->
+        </div>
+        
+        <div id="admin-panel">
+            <h3>🔐 Admin Panel - Manage Inventory</h3>
+            <button onclick="toggleLogin()">Admin Login</button>
+            <div id="login-section" style="display:none;">
+                <div class="login-form">
+                    <input type="text" id="admin-user" placeholder="Username">
+                    <input type="password" id="admin-pass" placeholder="Password">
+                    <button onclick="adminLogin()">Login</button>
+                </div>
+            </div>
+            <div id="admin-section" style="display:none;">
+                <div class="login-form">
+                    <input type="text" id="equip-name" placeholder="Equipment Name">
+                    <textarea id="equip-desc" placeholder="Description & Price"></textarea>
+                    <input type="text" id="equip-img" placeholder="Image URL (optional)">
+                    <button onclick="addEquipment()">➕ Add Equipment</button>
+                    <button onclick="adminLogout()">🚪 Logout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>📞 Contact StrengthPro Ahmedabad</h2>
+        <div class="contact-info">
+            <div class="phone-number">6355 175 955</div>
+            <p><strong>👨 Owner:</strong> Rohan Dohare</p>
+            <p><strong>📍 Location:</strong> Ahmedabad, Gujarat</p>
+            <p><strong>📧 Email:</strong> contact@strengthproahmedabad.com</p>
+            <p><strong>🕒 Service:</strong> 24/7 Emergency | Installation: Mon-Sat</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 StrengthPro Ahmedabad | Rohan Dohare | All Bull Strength equipments covered</p>
+        <p>Gym Equipment Sales | Service | Installation | Ahmedabad</p>
+    </footer>
+
+    <script>
+        // Complete equipment list from catalog
+        let equipments = [
+            {name: 'Lat Pull Down Single Pulley', desc: 'Bull Strength back machine. Perfect pull workouts. ₹85,000', img: ''},
+            {name: 'Chest Press Plate Loaded', desc: 'Heavy duty chest development. Commercial grade. ₹1,25,000', img: ''},
+            {name: '45° Leg Press w/ Safety', desc: 'Full leg workout with safety lock. ₹2,10,000', img: ''},
+            {name: 'Shoulder Press Dual Handle', desc: 'Plate loaded shoulder machine. ₹95,000', img: ''},
+            {name: 'Seated Leg Curl', desc: 'Pin loaded hamstring specialist. ₹75,000', img: ''},
+            {name: 'Hack Squat', desc: 'Quad focused heavy duty. ₹1,85,000', img: ''}
+        ];
+
+        let isAdmin = false;
+
+        function renderEquipments() {
+            document.getElementById('equip-list').innerHTML = equipments.map((equip, index) => `
+                <div class="equip">
+                    <div style="height:200px;background:linear-gradient(45deg,#4CAF50,#45a049);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:3rem;">${getIcon(equip.name)}</div>
+                    <h3>${equip.name}</h3>
+                    <p>${equip.desc}</p>
+                    <button onclick="quickCall()" style="background:#ff6b35;">📞 Enquiry</button>
+                </div>
+            `).join('');
+        }
+
+        function getIcon(name) {
+            if(name.includes('Chest')) return '💪';
+            if(name.includes('Leg')) return '🦵';
+            if(name.includes('Pull')) return '💥';
+            if(name.includes('Shoulder')) return '🛡️';
+            return '⚙️';
+        }
+
+        function quickCall() {
+            window.location.href = 'tel:6355175955';
+        }
+
+        function toggleLogin() {
+            document.getElementById('login-section').style.display = 'block';
+        }
+
+        function adminLogin() {
+            const user = document.getElementById('admin-user').value;
+            const pass = document.getElementById('admin-pass').value;
+            if(user === 'admin' && pass === 'rohan123') {
+                isAdmin = true;
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('admin-section').style.display = 'block';
+                alert('✅ Admin login successful!');
+            } else {
+                alert('❌ Wrong credentials!');
+            }
+        }
+
+        function addEquipment() {
+            const name = document.getElementById('equip-name').value;
+            const desc = document.getElementById('equip-desc').value;
+            const img = document.getElementById('equip-img').value;
+            
+            if(name && desc) {
+                equipments.push({name, desc, img});
+                renderEquipments();
+                document.getElementById('equip-name').value = '';
+                document.getElementById('equip-desc').value = '';
+                alert('✅ Equipment added!');
+            }
+        }
+
+        function adminLogout() {
+            isAdmin = false;
+            document.getElementById('admin-section').style.display = 'none';
+            document.getElementById('login-section').style.display = 'none';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // SEO: Save to localStorage
+        if(!localStorage.getItem('strengthpro_equipments')) {
+            localStorage.setItem('strengthpro_equipments', JSON.stringify(equipments));
+        }
+
+        // Initial render
+        renderEquipments();
+    </script>
+</body>
+</html>
